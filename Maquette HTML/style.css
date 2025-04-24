@@ -1,0 +1,149 @@
+
+/* Global */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #3D424F;
+  color: white;
+}
+
+:root {
+  --violet: #8340C1;
+  --album: #5507AF;
+  --coordonnees: #3D424F;
+  --footer: #2D2F3E;
+}
+
+/* Header */
+header {
+  background-color: var(--violet);
+  padding: 1rem 2rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  background-color: #5507AF;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+/* Albums */
+.albums {
+  background-color: var(--album);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.album-card {
+  background-color: #6B28B3;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.album-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Contact */
+.contact {
+  background-color: var(--coordonnees);
+  padding: 2rem;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  background-color: var(--violet);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer);
+  padding: 1rem;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .nav-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 40vh;
+  }
+}
