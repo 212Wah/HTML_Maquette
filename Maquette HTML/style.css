@@ -79,39 +79,6 @@ header {
   border-radius: 8px;
 }
 
-/* Contact */
-.contact {
-  background-color: var(--coordonnees);
-  padding: 2rem;
-}
-
-.contact h2 {
-  text-align: center;
-}
-
-.form-group {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-
-input, textarea {
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: none;
-  font-family: 'Montserrat', sans-serif;
-}
-
-button {
-  background-color: var(--violet);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
 /* Footer */
 footer {
   background-color: var(--footer);
@@ -146,4 +113,30 @@ footer {
   .hero {
     height: 40vh;
   }
+}
+
+/* Contact Line */
+.contact-line {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px;
+}
+
+.contact-line span {
+  flex: 1; 
+  text-align: center; 
+}
+
+
+.contact-line .left {
+  text-align: left; 
+}
+
+.contact-line .center {
+  text-align: center; 
+}
+
+.contact-line .right {
+  text-align: right; 
 }
