@@ -45,7 +45,7 @@ header {
 }
 
 .nav-links a {
-  color: black;  /* J'ai changé la couleur du texte pour qu'il contraste avec le fond blanc */
+  color: black;  
   text-decoration: none;
   font-weight: bold;
 }
