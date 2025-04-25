@@ -22,9 +22,16 @@ header {
 }
 
 .nav-container {
+  background-color: white;  
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.nav-link-albums, .nav-link-contact {
+  color: var(--violet); 
 }
 
 .logo {
@@ -38,7 +45,7 @@ header {
 }
 
 .nav-links a {
-  color: white;
+  color: black;  /* J'ai changé la couleur du texte pour qu'il contraste avec le fond blanc */
   text-decoration: none;
   font-weight: bold;
 }
