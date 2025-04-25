@@ -60,6 +60,10 @@ header {
   text-align: center;
 }
 
+.hero{
+  height: 500px;
+}
+
 .hero h1 {
   font-size: 3rem;
 }
